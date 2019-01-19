@@ -78,7 +78,7 @@ namespace TextToSPeechApp
                                 using (var fileStream = new FileStream(@"sample.wav", FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite))
                                 {
                                     await dataStream.CopyToAsync(fileStream).ConfigureAwait(false);
-                                    Entry.path = fileStream.Name;
+                                    Program.path = fileStream.Name;
                                     /*if(count > 0)
                                     {
                                         count--;

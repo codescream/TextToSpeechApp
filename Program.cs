@@ -1,5 +1,5 @@
 ﻿using System;
-using DemoHarnessUpd;
+
 using NAudio.Wave;
 
 //install Naudio from Manage Nuget packages
@@ -17,7 +17,7 @@ namespace TextToSPeechApp
             Console.Write("What would you like to convert to Speech? ");
             string speech = Console.ReadLine();
             test.TextSpeech(speech).Wait();
-            NetCoreSample.Audio(Entry.path);
+            NetCoreSample.Audio(path);
         }
 
         /*public static void PlaySound()
