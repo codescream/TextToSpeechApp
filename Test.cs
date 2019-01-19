@@ -1,5 +1,4 @@
-﻿using DemoHarnessUpd;
-using NAudio.Wave;
+﻿using NAudio.Wave;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -78,7 +77,7 @@ namespace TextToSPeechApp
                                 using (var fileStream = new FileStream(@"sample.wav", FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite))
                                 {
                                     await dataStream.CopyToAsync(fileStream).ConfigureAwait(false);
-                                    Program.path = fileStream.Name;
+                                    ProgramTTS.path = fileStream.Name;
                                     /*if(count > 0)
                                     {
                                         count--;

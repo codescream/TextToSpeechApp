@@ -5,7 +5,7 @@ using NAudio.Wave;
 //install Naudio from Manage Nuget packages
 namespace TextToSPeechApp
 {
-    class Program
+    class ProgramTTS
     {
         public static Test test = new Test();
         public static string path = "";
